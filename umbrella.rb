@@ -5,7 +5,7 @@ user_location = "Chicago"
 
 p user_location
 
-gmaps_url = "https://maps.googleapis.com/maps/api/geocode/json?address=#{user_location}&key="
+gmaps_url = "https://maps.googleapis.com/maps/api/geocode/json?address=#{user_location}&key=#{ENV.fetch("GMAPS_KEY")}"
 
 require "open-uri"
 
